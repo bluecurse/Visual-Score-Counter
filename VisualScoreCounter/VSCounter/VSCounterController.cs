@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VisualScoreCounter.Core;
 using VisualScoreCounter.Core.Configuration;
 using VisualScoreCounter.VSCounter.Configuration;
 using VisualScoreCounter.Utils;
@@ -34,7 +30,7 @@ namespace VisualScoreCounter.VSCounter
         [Inject] private CoreGameHUDController coreGameHUD;
         [Inject] private readonly RelativeScoreAndImmediateRankCounter relativeScoreAndImmediateRank;
         [Inject] ScoreController scoreController;
-        [Inject] TimeTweeningManager uwuTweenyManager;
+        [Inject] SongTimeTweeningManager uwuTweenyManager;
         [Inject] private GameplayCoreSceneSetupData setupData;
         [Inject] private NoteCountProcessor noteCountProcessor;
 

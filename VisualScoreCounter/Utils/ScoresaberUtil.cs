@@ -1,5 +1,4 @@
-﻿using HarmonyLib;
-using System.Reflection;
+﻿using System.Reflection;
 using UnityEngine;
 
 namespace VisualScoreCounter.Utils
@@ -61,10 +60,10 @@ namespace VisualScoreCounter.Utils
 					{
 						var y = GameObject.Find("SpectatorParent/RecorderCamera(Clone)");
 
-						spectateParent = y == null ? null : y.transform.parent;
+						spectateParent = y?.transform.parent;
 					}
 
-					if (!UnityEngine.XR.XRDevice.isPresent)
+					if (!XRUtil.IsPresent())
 						x.enabled = false;
 
 					// Doing this so other plugins that rely on Camera.main dont die
