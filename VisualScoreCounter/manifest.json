@@ -19,6 +19,7 @@
       "Name": "Visual Score Counter",
       "Description": "A configurable and readable score counter.",
       "CounterLocation": "VisualScoreCounter.VSCounter.VSCounterController",
+      "MultiplayerReady": true,
       "ConfigDefaults": {
         "Enabled": true,
         "Position": "BelowMultiplier",
